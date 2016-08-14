@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+<title>
+    todo App 
+</title>
+</head>  
+<body>
+    <h1>
+     To-Do App
+    </h1>
+	
+<style>
+	
+	
+    
+    h1{
+        text-align: center;
+        font-family: 'PT sans', sans-serif ;
+        font-size: 200px;
+        padding: 5px;
+        color: rgb(192,192,192);
+		margin: 8px  auto 10px auto ;
+		font-weight: bold ;
+		overflow: hidden ;
+		text-decoration:  underline  salmon;
+		color: gray;
+        text-shadow:
+       -1px -1px 0 #000,
+        1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000; 
+        
+      }
+      
+    #first{
+        height: 45px;
+        width: 750px ;
+        font-size: 35px ;
+        margin: 10px 230px 50px 230px ;
+		/*margin-right: 150px ;*/
+        padding: 10px ;
+        text-align: center ;
+        color : black ;
+		background-color: grey ;
+		border: 2px solid black ;        
+    }
+    
+    
+   #Addition{
+		margin: 20px auto auto 350px;
+		height: 55px;
+		width: 250px;
+		font-size: 30px;
+		border: 1px solid darkgreen;
+		padding: 5px;
+		background-color: rgba(0, 0, 1, 0.48);
+		font-weight: bold;
+		color: darkgreen;
+		text-align: center;
+		/*border-image-source: url("../add.png") width = "340" height = "100";*/
+		}
+	     
+		 
+		 
+	 #Addition:hover{
+		background-color: rgba(0, 167, 0, 0.48);
+		cursor: pointer;
+		color: peachpuff;
+		border: 1px solid black;
+				
+			}
+         
+         
+   	#deletation{
+		margin: 20px auto auto auto;
+		height: 55px;
+		width: 250px;
+		font-size: 30px;
+		border: 1px solid darkred;
+		padding: 5px;
+		background-color: rgba(0, 0, 1, 0.48);
+		font-weight: bold;
+		color: darkred;
+		text-align: center;
+				
+			}
+			
+	#deletation:hover{
+		background-color: darkred;
+		cursor: pointer;
+		color: peachpuff;
+		border: 1px solid black;
+				
+			}
+			
+			
+	table{
+		margin: 30px auto auto auto;
+		border: 1px solid black;
+		width: 800px;
+			}
+			
+			
+	p{
+		text-align: center;
+		font-size: 25px;
+		margin:20px 420px 20px 300px ;
+		font-family: sans-serif;
+		background-color:grey ;
+		width: 300 ; 
+		margin-right:  280px;
+		border: 2px solid black ;
+			}
+			
+	input[type = text]{
+		height: 35px;
+		font-size: 20px;
+		color: brown;
+		padding: 5px;
+		width: 250px ;
+		height: 55px ;
+		background-color: grey ;
+			}
+			
+	body{
+		background-image: url("../img9.png ");
+		/*background-repeat: no-repeat ;
+		background-position: 0px 0px;
+		background-position: 120px 140px ;
+		background-attachment: fixed ;*/
+	}
+    
+	#decorate {
+		width: 70px ;
+		height: 100%;
+		margin: auto 90px auto 40px ;
+		border: 3px solid black
+		
+	}
+      
+    
+
+</style>    
+
+<script src="../main.js"></script>
+    
+    
+  <fieldset id="decorate">  
+<input type="textbox" id="first" placeholder="Enter your Taxk"/></br>
+<input type="button" value="Add" id="Addition" onclick="addList('ToDoListTable')"/>
+<input type="button" value="Delete"  id="deletation" onclick="deleteList('ToDoListTable')"/>
+<table id="ToDoListTable" width="150px"></table>
+<p>
+The Total Work To Do Is = <b id="total"></b>  
+</p>
+    </fieldset>
+       
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+      
